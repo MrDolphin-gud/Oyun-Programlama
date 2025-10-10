@@ -8,14 +8,18 @@ public class Script : MonoBehaviour
     
     void Start()
     {
-        
+        //transform.position += pozisyon;
+        //transform.position += pozisyon * Time.deltaTime;
     }
 
     // Update is called once per frame
     void Update()
     {
+        //transform.position += pozisyon;
+        //transform.position += pozisyon * Time.deltaTime;
         float yatay = Input.GetAxis("Horizontal");
         float dikey = Input.GetAxis("Vertical");
         transform.position += new Vector3(yatay * Time.deltaTime * hız, dikey * Time.deltaTime * hız, 0);
     }
 }
+
